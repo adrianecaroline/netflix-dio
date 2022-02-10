@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+:root{ /*variável */
+    --vermelho: #f1bcb8;
+    --preta: #0c0b0b; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+body{
+    background: var(--preta);
+    background: linear-gradient(180deg, rgb(138, 160, 135), rgb(109, 104, 114), rgb(23, 25, 48), rgb(83, 48, 78));
+    font-family: Helvetica;
+    color: rgb(255, 255, 255);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header {
+    background-color: rgb(7, 7, 7);
+    background: linear-gradient(to left, rgb(204, 208, 223), rgb(42, 46, 85));
+} 
+
+header .logo{
+    height: 80px;
+    /*color: var(--vermelho);
+    font-family: 'Arial';
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -4px 3px rgb(38, 9, 54), 0px 0px rgb(17, 8, 8);*/
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: large;
+    color: rgb(66, 55, 55);
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+    background-color: rgb(140, 110, 168);
+    padding: 19px 3px;
+}
+
+.filme-principal .container{
+    height: 400px;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0,0,0, 0.5) 100%), no-repeat center, url('../recursos/essa.jpg');
+    background-size: cover;
+    
+
+    display: flex; /*joga os elementos num padrão em linha*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: 'Spartan', sans-serif;
+    
+}
+
+.filme-principal .titulo{    
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.botao{
+    background-color: rgba(61, 32, 116, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+
+    font-family: 'Spartan', sans-serif;
+}
+
+.botao:hover{
+    background-color: rgb(29, 28, 29);
+    color: rgb(245, 241, 241);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%; /*a img aparece no seu tamanho natural*/
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+footer {
+    margin-top: 2%;
+    padding: 40px 200px;
+    text-align: left;
+    color: #000000;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+}
+
+li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+
+.list-f{
+    list-style-type: none;
+    list-style: none;
+    margin-top: 2%;
+    line-height: 200%; /*espaçamento entre as linhas*/
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*margin: 2% 20rem 0 20rem; 1- top; 2- right; 3- bottom; 4-left;*/
+
+

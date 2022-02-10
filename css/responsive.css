@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) { /*quando a tela tiver até 600px de largura, a regra abaixo é aplicada*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 190px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 60%;
+    }
+} 
+
+@media screen and (min-width: 1200px) {
+    .filme-principal{
+        width: 100%;
+        height: 100%;
+    }
+}
